@@ -6,4 +6,7 @@ cache:
   - node_modules
 script:
   - npm test
-  - npm run build
+  - npm run builds
+after_success:
+  - npm install -g firebase-tools
+  - firebase deploy --token $FIREBASE_TOKEN --non-interactive
