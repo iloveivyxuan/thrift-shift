@@ -24,7 +24,7 @@ const ProductList = ({ productIds, user, userRole }) => {
   } else {
     return (
       <div style={{ textAlign: 'center', height: '100vh', width: '100vw', alignItems: 'center' }}>
-        <img src='bookshelf.png' style={{ height: '200px', left: '50%', top: '50%' }}></img>
+        <img src='bookshelf.png' alt='image' style={{ height: '200px', left: '50%', top: '50%' }}></img>
         <br />
         There is nothing here<br />
         Add an item to start

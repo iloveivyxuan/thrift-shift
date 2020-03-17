@@ -53,7 +53,7 @@ const App = () => {
       setOpen(true);
       addUserInfo(user);
     }
-  });
+  }, [user, userRole]);
 
   useEffect(() => {
     if (userRole) {
@@ -64,7 +64,7 @@ const App = () => {
         getUserProductsInfo(user.uid, setProductIds)
       }
     }
-  }, [userRole]);
+  }, [user, userRole]);
 
   return (
     <Container disableGutters>

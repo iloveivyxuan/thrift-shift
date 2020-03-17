@@ -63,7 +63,7 @@ const ItemForm = ({userRole}) => {
 		description: ''
 	});
 	const [image, setImage] = useState(null);
-	const [progress, setProgress] = useState(0);
+	const [setProgress] = useState(0);
 
 	const handleClickOpen = () => {
 		setOpen(true);

@@ -16,7 +16,7 @@ const Bid = props => {
 
   useEffect(() => {
     getBidInfo(props.bidId, setBid)
-  }, [])
+  })
 
   if (bid) {
     return (

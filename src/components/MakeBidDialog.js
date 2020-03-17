@@ -21,7 +21,7 @@ const MakeBidDialog = ({ user, userRole, productId }) => {
     if (productId) {
       getProductInfo(productId, setProduct);
     }
-  }, []);
+  }, [productId]);
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -62,6 +62,7 @@ const MakeBidDialog = ({ user, userRole, productId }) => {
     return (
       <div>
         <Button
+          data-test="addBidBtn"
           variant="contained"
           onClick={handleClickOpen}
           color="secondary"
@@ -93,6 +94,7 @@ const MakeBidDialog = ({ user, userRole, productId }) => {
                 </Grid>
                 <Grid item xs={6}>
                   <TextValidator
+                    data-test="newBidFiled"
                     value={bidAmount}
                     InputProps={{
                       startAdornment: (
