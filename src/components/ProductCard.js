@@ -25,7 +25,7 @@ const ProductCard = props => {
     if (props.productId) {
       getProductInfo(props.productId, setProduct);
     }
-  }, []);
+  }, [props.productId]);
 
   if (!imageURL && product) {
     getProductImage(product.imageId, setImageURL);
