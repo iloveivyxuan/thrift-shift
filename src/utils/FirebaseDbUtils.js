@@ -1,6 +1,22 @@
 import firebase from "firebase"
 import 'firebase/database';
 
+const firebaseConfig = {
+    apiKey: "AIzaSyAzR_Ap6sa0hRMDFokA3SMo4jLUIMqHSdc",
+    authDomain: "quick-travis-f48a0.firebaseapp.com",
+    databaseURL: "https://quick-travis-f48a0.firebaseio.com",
+    projectId: "quick-travis-f48a0",
+    storageBucket: "quick-travis-f48a0.appspot.com",
+    messagingSenderId: "978921059979",
+    appId: "1:978921059979:web:0e8a7251bb6b12b1f5068e"
+  };
+
+// Initialize firebase
+if (!firebase.apps.length) {
+    console.log("[Message] Initialize firebase app")
+    firebase.initializeApp(firebaseConfig);
+}
+
 const db = firebase.database();
 
 const getUserProductsInfo = (userId, setProductIds) => {
