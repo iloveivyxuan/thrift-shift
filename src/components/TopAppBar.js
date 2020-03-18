@@ -34,7 +34,7 @@ const TopAppBar = (props) => {
 						<AppDrawer userRole={props.userRole} setPage={props.setPage} />
 						<Grid container alignItems="center" justify="space-between">
 							<Grid item>
-								<Typography variant="h6">
+								<Typography data-cy="title" variant="h6">
 									Thrift Shift
 								</Typography>
 							</Grid>
