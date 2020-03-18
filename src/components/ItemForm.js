@@ -127,7 +127,7 @@ const ItemForm = ({userRole}) => {
         fullScreen={fullScreen}
         TransitionComponent={fullScreen ? SlideTransition : FadeTransition}
       >
-        <DialogTitle id="alert-dialog-title">Add an Item to Sell</DialogTitle>
+        <DialogTitle id="alert-dialog-title">Add an Item to Sell!</DialogTitle>
         <ValidatorForm
           onSubmit={() => {
             addItem();
