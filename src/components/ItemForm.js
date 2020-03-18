@@ -105,21 +105,20 @@ const ItemForm = ({userRole}) => {
 
 	return (
     <div>
-      {userRole === "seller" ? (
-        <div className={classes.root}>
-          <Fab
-            data-testid="addItemBtn"
-            variant="extended"
-            onClick={handleClickOpen}
-            className={classes.fab}
-            color="secondary"
-            aria-label="edit"
-          >
-            <AddIcon className={classes.extendedIcon} />
-            Add item
-          </Fab>
-        </div>
-      ) : null}
+      <div className={classes.root}>
+        <Fab
+          data-testid="addItemBtn"
+          variant="extended"
+          onClick={handleClickOpen}
+          className={classes.fab}
+          color="secondary"
+          aria-label="edit"
+          data-cy="button"
+        >
+          <AddIcon className={classes.extendedIcon} />
+          Add item
+        </Fab>
+      </div>
       <Dialog
         open={open}
         onClose={handleClose}
@@ -127,7 +126,7 @@ const ItemForm = ({userRole}) => {
         fullScreen={fullScreen}
         TransitionComponent={fullScreen ? SlideTransition : FadeTransition}
       >
-        <DialogTitle id="alert-dialog-title">Add an Item to Sell</DialogTitle>
+        <DialogTitle data-cy="dialog" id="alert-dialog-title">Add an Item to Sell</DialogTitle>
         <ValidatorForm
           data-testid="form"
           onSubmit={() => {
