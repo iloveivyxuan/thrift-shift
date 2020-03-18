@@ -6,13 +6,13 @@ import "firebase/auth";
  */
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAg444frFeJexkU2nuI2ZzukW-2WCAYH_I",
-    authDomain: "thriftshift-43243.firebaseapp.com",
-    databaseURL: "https://thriftshift-43243.firebaseio.com",
-    projectId: "thriftshift-43243",
-    storageBucket: "thriftshift-43243.appspot.com",
-    messagingSenderId: "448439043058",
-    appId: "1:448439043058:web:49dc966be4585004c6e16b",
+    apiKey: "AIzaSyD3ExwW8TlsWKQ8pAGfCWttuVZRcyquNKY",
+    authDomain: "thriftshiftci.firebaseapp.com",
+    databaseURL: "https://thriftshiftci.firebaseio.com",
+    projectId: "thriftshiftci",
+    storageBucket: "thriftshiftci.appspot.com",
+    messagingSenderId: "98663373843",
+    appId: "1:98663373843:web:1807a837b55d13864133e6",
     measurementId: "G-GFTWS7EP1T"
 };
 

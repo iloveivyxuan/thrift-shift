@@ -63,7 +63,7 @@ const ItemForm = ({userRole}) => {
 		description: ''
 	});
 	const [image, setImage] = useState(null);
-	const [setProgress] = useState(0);
+	const [progress, setProgress] = useState(0);
 
 	const handleClickOpen = () => {
 		setOpen(true);
@@ -75,7 +75,7 @@ const ItemForm = ({userRole}) => {
 	};
 
 	const initialState = () => {
-		setProgress(0);
+		setProgress(progress);
 		setProduct({
 			name: '',
 			price: '',
@@ -108,6 +108,7 @@ const ItemForm = ({userRole}) => {
       {userRole === "seller" ? (
         <div className={classes.root}>
           <Fab
+            data-testid="addItemBtn"
             variant="extended"
             onClick={handleClickOpen}
             className={classes.fab}
